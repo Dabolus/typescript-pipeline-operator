@@ -1,0 +1,20 @@
+{
+  "name": "typescript-pipeline-operator",
+  "main": "pipeline.js",
+  "author": "Giorgio Garasto <giorgio@garasto.it>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node pipeline.js",
+    "build": "babel pipeline.ts -o pipeline.js",
+    "watch": "yarn build --watch"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-pipeline-operator": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-typescript": "^7.1.0"
+  },
+  "browserslist": ["> 2%"]
+}
